@@ -1,23 +1,20 @@
 #include "main.h"
-
+#include "main.h"
 /**
- *
- * add - adds two integers
- *
- * @n1: integer 1
- *
- * @n2: integer 2
- * Description: give two integers, returns sum
- * Return: sum
- *
+ * print_alphabet_x10 -> prints the lowercase alphabets
  */
 
-int add(int n1, int n2)
-
+void print_alphabet_x10(void)
 {
-		int sum;
+	int i;
+	int j;
 
-			sum = n1 + n2;
-
-				return (sum);
+	i = 0;
+	while (i < 10)
+	{
+		for (j = 'a'; j <= 'z'; j++)
+			_putchar(j);
+		_putchar('\n');
+		i++;
+	}
 }
